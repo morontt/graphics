@@ -4,7 +4,7 @@ function draw() {
     var canvas = document.getElementById('canvas');
     var w = parseInt(canvas.getAttribute('width'));
     if (canvas.getContext) {
-        var k = 0.5;
+        var k = 0.55;
         var f0 = 15.0 * Math.PI / 180.0;
         var x0, y0, x1, y1, x2, y2, x, y;
 
@@ -46,7 +46,6 @@ function draw() {
                         y = 0.5 * (y + y2);
                 }
 
-                console.log(x, y);
                 plot(x, y);
                 i++;
             }
